@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
-    
+    <link rel="stylesheet" href="{%static 'css/bootstrap4-neon-glow.min.css'%}">
+    <!-- {%static ''%} -->
     
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
@@ -18,29 +18,12 @@
   </head>
   <body>
 
-  <div class="navbar-dark text-white">
-    <div class="container">
-      <nav class="navbar px-0 navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a href="index.html" class="pl-md-0 p-3 text-light">Start</a>
-            <a href="app.html" class="p-3 text-decoration-none text-light">App example</a>
-            <a href="form.html" class="p-3 text-decoration-none text-light">Form example</a>
-          </div>
-        </div>
-      </nav>
-
-    </div>
-  </div>
 
 
   
 <div class="container py-5 mb5">
 
-  <h1 class="mb-5">Sample form</h1>
+  <h1 class="mb-5">Send me a message!</h1>
 
   <div class="row py-4">
     <div class="col-md-4 order-md-2 mb-4">

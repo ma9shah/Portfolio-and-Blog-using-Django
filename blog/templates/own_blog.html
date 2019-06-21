@@ -1,12 +1,83 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Neon Glow - Bootstrap Theme</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{%static 'css/bootstrap4-neon-glow.min.css'%}" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css" />
 </head>
-<body>
-    {{own_blog.title}}
+
+<body class="">
+    <div class="navbar-dark text-white text-lefts">
+        <div class="container">
+            <nav class="navbar px-0 navbar-expand-md navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <!-- <a href="/" class="pl-md-0 p-3 text-left text-success decoration-none">Start</a> -->
+                        <a href="/" class=" pl-md-0 p-3 text-light text-decoration-none">Start</a>
+                        <a href="blog/" class="p-3 text-success text-decoration-none">Blog</a>
+                        <a href="{%static 'ManavS_Resume.pdf'%}" class="p-3 text-decoration-none text-light">Resume</a>
+                        <a href="mailto:ma9shah@gmail.com" target="_top"" class=" p-3 text-decoration-none
+                            text-light">Contact</a>
+
+
+                    </div>
+                </div>
+                <div class="" style="position:absolute; right: 0; top:50%; transform: translate(0,-50%)">
+                    <a href="https://www.github.com/ma9shah" style="font-size: 30px;"><i
+                            class="text-white fab fa-github"></i></a>
+                    <a class="ml-4 text-decoration-none" href="https://www.linkedin.com/in/ma9shah"
+                        style="font-size: 30px;"><i class="text-secondary fab fa-linkedin-in"></i></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container ">
+        <div class="container text-center">
+            <h1 class="text-spacey text-mono mt-5 card-title">{{own_blog.title}}</h1><br>
+            <h4 class="text-mono text-muted text-right">{{own_blog.blog_date.date}}</h4>
+        </div>  
+        <!-- <hr style=" border-top:lightgreen dashed 5px; width: 100px;"> -->
+
+    <hr style=" border-top:lightgreen dashed 4px; width:auto;">
+        <br><br>
+        <p>{{own_blog.content}}</p>
+        <!-- <img src="{{own_blog.image.url}}" alt="" srcset="" class="w-100" style="height: 50vh"> -->
+    </div>
+    <!-- <hr style=" border-top:lightgreen dashed 3px; width:auto;"> -->
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
+</html>
+
 </html>

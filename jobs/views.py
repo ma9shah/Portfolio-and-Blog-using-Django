@@ -4,3 +4,5 @@ from .models import Job
 def home(req):
     joblist=Job.objects.all
     return render(req, 'home.html',{'joblist': joblist})
+def contact(req):
+    return render(req, 'form.html')

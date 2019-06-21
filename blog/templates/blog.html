@@ -1,21 +1,6 @@
-<!-- {% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blogs</title>
-</head>
-<body>
-    Blogs shall be showcased hiereee!
-    {%for blog in blogs%}
-        {{blog.content}} <br>
-    {%endfor%}
-</body>
-</html>
-<!DOCTYPE html>
-  <html> -->
+  <html>
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -41,7 +26,8 @@
                                 <h5 class="center-align">{{blog.content}}</h5>
                             <!-- </div> -->
                             <div class="card-action hover">
-                              <a class="" href="{{blog.image.url}}">Download here -></a>
+                              <!-- <a class="" href="{{blog.title}}">Read more -></a> -->
+                              <a class="" href="{% static 'ManavS_Resume.pdf' %}">Read more -></a>
                             </div>
                           </div>
                           
